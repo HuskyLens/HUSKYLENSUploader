@@ -1,6 +1,7 @@
 # HUSKYLENSUploader
 ## Windows
 
+* Install .Net Framework https://www.microsoft.com/zh-CN/download/details.aspx?id=56116
 * Run K-Flash.exe on administrator.
 * Select the firmware and serial port.
 * Click to flash.
