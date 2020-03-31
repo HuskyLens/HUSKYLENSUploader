@@ -42,9 +42,28 @@ cd HUSKYLENSUploader
 * Run the following code to update the firmware:
 
 ```
-sudo python3 kflash.py -b 2000000 HUSKYLENSWithModelV0.4.6Stable.kfpkg
+sudo python3 kflash.py -b 2000000 HUSKYLENSWithModelV0.4.7Stable.kfpkg
 ```
 
 
 * Disconnect and reconnect the USB to reboot the HUSKYLENS to make it a refresh start up.
+
+# Version Different
+
+| File name                            | Detail                                        |
+| ------------------------------------ | --------------------------------------------- |
+| HUSKYLENSWithModelVx.x.xStable.kfpkg | Normal firmware with models                   |
+| HUSKYLENSVx.x.xStable.bin            | Normal firmware without models                |
+| HUSKYLENSWithModelVx.x.xClass.kfpkg  | Object classification firmware with models    |
+| HUSKYLENSVx.x.xClass.bin             | Object classification firmware without models |
+
+#### What is different between with models and without?
+
+Models stores the deep learning architecture and weights like MobileNet or YOLO. It is really large and cost a lot of time to upload.
+
+Since the models not always change, firmware without models are provided to speed up the upload process.
+
+#### Why object classification is separated?
+
+Because object classification requires a lot of ram, which is not enough for other algorithm.
 
